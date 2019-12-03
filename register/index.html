@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="container-header">
+            <div class="title">
+                <h2>REGİSTER</h2>
+            </div>
+            <div class="logo">
+
+            </div>
+        </div>
+
+        <div class="container-body">
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <input type="text" name="username" id="username" placeholder="Username" onchange="usernameChange()">
+            <input type="password" name="password" id="password" placeholder="Password" onchange="passwordChange()">
+            <input type="password" name="re-password" id="repassword" placeholder="Re-password" onchange="repasswordChange()">
+
+            <select class="select" id="valueofselectd"> 
+                <option value="value" selected>Choose your secure question</option>
+                <option value="">What was your childhood nickname?</option>
+                <option value="">In what city did you meet your spouse/significant other?</option>
+                <option value="">What is the name of your favorite childhood friend?</option>
+                <option value="">What street did you live on in third grade?</option>
+                <option value="">What is your oldest sibling’s birthday month and year? (e.g., January 1900)</option>
+                <option value="">What is the middle name of your youngest child?</option>
+                <option value="">What is your oldest sibling's middle name?</option>
+                <option value="">What school did you attend for sixth grade?</option>
+                <option value="">What was your childhood phone number including area code? (e.g., 000-000-0000</option>
+                <option value="">What is your oldest cousin's first and last name?</option>
+                <option value="">What was the name of your first stuffed animal?</option>
+                <option value="">In what city or town did your mother and father meet?</option>
+                <option value="">Where were you when you had your first kiss?</option>
+                <option value="">What is the first name of the boy or girl that you first kissed?</option>
+                <option value="">What was the last name of your third grade teacher?</option>
+                <option value="">In what city does your nearest sibling live? </option>
+            </select>
+
+            <input type="text" name="answer" id="answer" placeholder="Answer" onchange="secureQuest()">
+
+            <input type="submit" name="register" id="register" class="register" value="Register" onclick="tiklandi()">
+        </div>
+
+        <div class="container-footer">
+            <a href="http://kayafirat.com">www.kayafirat.com</a>
+
+        </div>
+        <div class="verify">
+            <div class="username-verify" id="username-verify">
+                <p id="maximum20">Maximum username must contain 20 characters</p>
+                <p id="minimum8">Username must contain at least 8 characters</p>
+                <p id="uppercaseU">Username must contain at least one uppercase character.</p>
+                <p id="lowercaseU">Username must contain at least one lowercase character.</p>
+                <p id="specialCharacterU">Username can not have special characters.(#,$,&,@...)</p>
+            </div>
+
+            <div class="password-verify" id="password-verify">
+                <p id="maximum20P">Password maximum has to has 20 characters</p>
+                <p id="minumum8P">Password must contain at least 8 characters</p>
+                <p id="uppercaseP">Password must has an uppercase character at least.</p>
+                <p id="lowercaseP">Password must has an lowercase character at least.</p>
+                <p id="specialCharacterP">Password must has an special characters.(#,$,&,@...)</p>
+                <p id="equalP">Password and Re-password must be equal.</p>
+            </div>
+
+            <div class="securityquestion-verify" id="securityquestion-verify">
+                <p id="choose">Choose a secure question</p>
+                <p id="blank">Answer can not be blank</p>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
