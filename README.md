@@ -1,3 +1,3 @@
 # Register-HTML-CSS-JAVASCRIPT
 
-kayatech.me/register/  ---> TEST
+www.kayatech.me/register/  
